@@ -1,0 +1,94 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+#root{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.info {
+    width: 300px;
+}
+
+.history{
+    width: 300px;
+}
+
+.notes{
+    width: 300px;
+}
+
+.wrapper{
+    padding: 20px;
+    border: 1px solid gray;
+    margin: 20px;
+    
+}
+
+.header-section {
+    display: flex;
+    height: 30px;
+    align-items: center;
+}
+
+.header-section>svg {
+    height: 30px;
+    cursor: pointer;
+}
+
+.header-section:not(.header-section:has(h3)){
+    justify-self: end;
+}
+
+.header-section>h3 {
+    flex-grow: 2;
+}
+
+.info_edit {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 5px;
+    align-self:flex-start;
+}
+
+.table {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid gray;
+    border-right: 0;
+}
+
+.table_head {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.table_cell{
+    padding: 5px;
+    border-right: 1px solid gray;
+}
+
+.employees{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    width: 600px;
+}

@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.header_content {
+    display: block;
+    flex-grow: 2;
+}
+
+.header_controls {
+    display: flex;
+    height: 25px;
+}
+
+.companies {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid gray;
+    border-right: 0;
+}
+
+.companies_head {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.companies_cell {
+    padding: 5px;
+    border-right: 1px solid gray;
+}
+
+.adding-modal-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+}
+
+.adding-modal {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.clickable_table-cell {
+    cursor: pointer;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 40px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transition: color 100ms;
+}
+
+.admin-modal_btn{
+    margin-top: 10px;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #F082AC;
+}
+
+
+.table_cell-selected {
+    background-color: aquamarine;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.adding-modal_close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.adding-modal>* {
+    display: block;
+}
+
+.adding-modal-open {
+    z-index: 999;
+    opacity: 1;
+}
